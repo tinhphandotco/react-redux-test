@@ -1,0 +1,1 @@
+export const prefixAction = prefix => type => `${prefix}.${type}`
