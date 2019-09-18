@@ -2,14 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'
 import store from './redux/store'
+
 import App from './App';
+import Hooks from './Hooks';
+import { Lightweight } from './chartjs'
+
 import * as serviceWorker from './serviceWorker';
 
 import './index.css';
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    {/* <App /> */}
+    {/* <Hooks /> */}
+    <Lightweight />
   </Provider>,
   document.getElementById('root')
 );
