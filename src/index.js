@@ -6,6 +6,7 @@ import store from './redux/store'
 import App from './App';
 import Hooks from './Hooks';
 import { Lightweight } from './chartjs'
+import ReactSlickDemo from "./react-slick"
 
 import * as serviceWorker from './serviceWorker';
 
@@ -14,8 +15,9 @@ import './index.css';
 ReactDOM.render(
   <Provider store={store}>
     {/* <App /> */}
-    {/* <Hooks /> */}
-    <Lightweight />
+    <Hooks />
+    {/* <Lightweight /> */}
+    {/* <ReactSlickDemo /> */}
   </Provider>,
   document.getElementById('root')
 );
