@@ -4,7 +4,21 @@ import {
 } from "./actionTypes"
 
 const initState = {
-  countClick: 0
+  countClick: 0,
+  countType: {
+    value: 'string'
+  },
+  users: [
+    {
+      name: 'A',
+      status: 'BLOCKED'
+    },
+    {
+      name: 'B',
+      status: 'ACTIVE'
+    }
+  ],
+  userStatus: 'ACTIVE'
 }
 
 export default function (state = initState, { type, payload }) {
@@ -20,6 +34,22 @@ export default function (state = initState, { type, payload }) {
       return {
         ...state,
         countClick: 0
+      }
+    }
+
+    case 'TANG_LEN_SO_3': {
+      return {
+        ...state,
+        countClick: 3
+      }
+    }
+
+    case 'CHANGE_COUNT_TYPE': {
+      return {
+        ...state,
+        countType: {
+          value: 'string'
+        }
       }
     }
 
